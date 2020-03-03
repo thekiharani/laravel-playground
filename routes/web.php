@@ -22,3 +22,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('pay', 'PayOrderController@store')->name('pay');
 Route::get('channels', 'ChannelController@index')->name('channels.index');
 Route::get('post/create', 'PostController@create')->name('post.create');
+
+Route::resource('customers', 'CustomerController');
