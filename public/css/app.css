@@ -11356,3 +11356,7 @@ a.text-dark:focus {
   }
 }
 
+.completed {
+  text-decoration: line-through;
+}
+

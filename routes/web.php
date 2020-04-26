@@ -24,3 +24,8 @@ Route::get('channels', 'ChannelController@index')->name('channels.index');
 Route::get('post/create', 'PostController@create')->name('post.create');
 
 Route::resource('customers', 'CustomerController');
+
+Route::view('counter', 'counter');
+
+Route::view('todos', 'todos.index')->name('todos.index')->middleware('auth');
+// Route::resource('todos', 'TodoController')->middleware('auth');
